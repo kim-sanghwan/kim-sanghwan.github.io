@@ -12,7 +12,6 @@ For now, this page is assumed to be a static description of your courses. You ca
 Organize your courses by years, topics, or universities, however you like!
 
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,11 +45,9 @@ Organize your courses by years, topics, or universities, however you like!
     </style>
 </head>
 <body>
-    <h1>My Experiments</h1>
-
     <!-- Example Experiment Section -->
     <div class="experiment">
-        <img src="logo/ETH_logo.png" alt="Company Logo">
+        <img src="assets/img/ETH_logo.png" alt="Company Logo">
         <div class="experiment-details">
             <h2><a href="https://www.ethz.ch" target="_blank">Company Name</a></h2>
             <p><strong>Period:</strong> January 2023 - March 2023</p>
@@ -58,7 +55,6 @@ Organize your courses by years, topics, or universities, however you like!
             <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et justo in lorem cursus bibendum.</p>
         </div>
     </div>
-
     <!-- Add more experiment sections as needed -->
 
 </body>
