@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /experiences/
-title: Work experiences including Internship
-description: 
+permalink: /Experiences/
+title: Experiences
+description: Work experiences in reversed chronological order.
 nav: true
 nav_order: 5
 ---
