@@ -17,7 +17,6 @@ Organize your courses by years, topics, or universities, however you like!
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Experiment Page</title>
     <style>
         /* Add your CSS styles here */
         body {
@@ -28,12 +27,15 @@ Organize your courses by years, topics, or universities, however you like!
             border: 1px solid #ccc;
             padding: 20px;
             border-radius: 5px;
+            display: flex; /* Add flex display */
+            align-items: center; /* Center vertically */
         }
         .experiment img {
             max-width: 100px;
         }
         .experiment h2 {
             margin-top: 0;
+            margin-left: 20px; /* Add margin to separate logo and name */
         }
     </style>
 </head>
@@ -42,14 +44,15 @@ Organize your courses by years, topics, or universities, however you like!
 
     <!-- Example Experiment Section -->
     <div class="experiment">
-        <img src="../assets/img/ETH_logo.png" alt="Company Logo">
-        <h2><a href="https://www.ethz.ch" target="_blank">Example Experiment</a></h2>
+        <img src="./logo/ETH_logo.png" alt="Company Logo">
+        <h2><a href="https://www.ethz.ch" target="_blank">Company Name</a></h2>
         <p><strong>Period:</strong> January 2023 - March 2023</p>
         <p><strong>Title:</strong> Experiment Title</p>
         <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et justo in lorem cursus bibendum.</p>
     </div>
 
     <!-- Add more experiment sections as needed -->
-
 </body>
 </html>
+
+
