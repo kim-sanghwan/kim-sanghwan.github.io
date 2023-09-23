@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://kim-sanghwan.github.io/al-folio/sitemap.xml
+Sitemap: https://kim-sanghwan.github.io/sitemap.xml
