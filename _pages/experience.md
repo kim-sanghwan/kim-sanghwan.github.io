@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /Experiences/
+permalink: /experiences/
 title: Experiences
 description: Work experiences in reversed chronological order.
 nav: true
