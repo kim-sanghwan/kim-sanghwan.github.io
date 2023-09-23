@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /experiences/
-title: experiences
-description: Materials for courses you taught. Replace this text with your description.
+title: Work experiences including Internship
+description: 
 nav: true
 nav_order: 5
 ---
