@@ -4,9 +4,8 @@ permalink: /experiences/
 title: Experiences
 description: Work experiences in reversed chronological order.
 nav: true
-nav_order: 7
+nav_order: 7 #<img src="https://github.com/kim-sanghwan/kim-sanghwan.github.io/tree/master/assets/img/ETH_logo.png" alt="Company Logo">
 ---
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -48,11 +47,25 @@ nav_order: 7
     <!-- Example Experiment Section -->
     <div class="experiment">
         <div class="company-details">
-            <img src="https://github.com/kim-sanghwan/kim-sanghwan.github.io/tree/master/assets/img/ETH_logo.png" alt="Company Logo">
-            <h2 class="company-name"> Research Assistant at <a href="https://www.example.com" target="_blank">Company Name</a>, ETH Zurich</h2>
+            {%- assign image_path = ETH_logo.png | prepend: 'assets/img/' -%}
+            {% include figure.html
+              path=image_path
+              alt="ETH_logo"
+              cache_bust=true -%}
+
+            <h2 class="company-name"> Research Assistant at <a href="https://ait.ethz.ch/" target="_blank">Advanced Interactive Technologies Lab</a>, ETH Zürich</h2>
         </div>
-        <p><strong>Period:</strong> January 2023 - March 2023</p>
-        <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et justo in lorem cursus bibendum.</p>
+        <p>July 2023 - Present</p>
+        <p> I am working on Long-Term Action Anticipation (LTA) task utilizing vision-language and large language models, under the supervision of <a href="https://xiwang1212.github.io/homepage/" target="_blank">Dr. Xi Wang</a>  and <a href="https://xianyongqin.github.io/" target="_blank">Dr. Yongqin Xian</a>. We achieved the state-of-the-art performance on LTA Ego4D challenge. </p>
+    </div>
+
+    <div class="experiment">
+        <div class="company-details">
+            <img src="https://github.com/kim-sanghwan/kim-sanghwan.github.io/tree/master/assets/img/ETH_logo.png" alt="Company Logo">
+            <h2 class="company-name"> Research Assistant at <a href="https://ait.ethz.ch/" target="_blank">Advanced Interactive Technologies Lab</a>, ETH Zürich</h2>
+        </div>
+        <p>July 2023 - Present</p>
+        <p> I am working on Long-Term Action Anticipation (LTA) task utilizing vision-language and large language models, under the supervision of <a href="https://xiwang1212.github.io/homepage/" target="_blank">Dr. Xi Wang</a>  and <a href="https://xianyongqin.github.io/" target="_blank">Dr. Yongqin Xian</a>. We achieved the state-of-the-art performance on LTA Ego4D challenge. </p>
     </div>
 </body>
 </html>
