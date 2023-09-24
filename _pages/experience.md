@@ -4,7 +4,7 @@ permalink: /experiences/
 title: Experiences
 description: Work experiences in reversed chronological order.
 nav: true
-nav_order: 7 #<img src="https://github.com/kim-sanghwan/kim-sanghwan.github.io/tree/master/assets/img/ETH_logo.png" alt="Company Logo">
+nav_order: 7 
 ---
 <html lang="en">
 <head>
@@ -47,25 +47,19 @@ nav_order: 7 #<img src="https://github.com/kim-sanghwan/kim-sanghwan.github.io/t
     <!-- Example Experiment Section -->
     <div class="experiment">
         <div class="company-details">
-            {%- assign image_path = ETH_logo.png | prepend: 'assets/img/' -%}
-            {% include figure.html
-              path=image_path
-              alt="ETH_logo"
-              cache_bust=true -%}
-
+            <img src="/assets/img/ETH_logo.png" alt="Company Logo">
             <h2 class="company-name"> Research Assistant at <a href="https://ait.ethz.ch/" target="_blank">Advanced Interactive Technologies Lab</a>, ETH Zürich</h2>
         </div>
         <p>July 2023 - Present</p>
         <p> I am working on Long-Term Action Anticipation (LTA) task utilizing vision-language and large language models, under the supervision of <a href="https://xiwang1212.github.io/homepage/" target="_blank">Dr. Xi Wang</a>  and <a href="https://xianyongqin.github.io/" target="_blank">Dr. Yongqin Xian</a>. We achieved the state-of-the-art performance on LTA Ego4D challenge. </p>
     </div>
-
     <div class="experiment">
         <div class="company-details">
-            <img src="https://github.com/kim-sanghwan/kim-sanghwan.github.io/tree/master/assets/img/ETH_logo.png" alt="Company Logo">
-            <h2 class="company-name"> Research Assistant at <a href="https://ait.ethz.ch/" target="_blank">Advanced Interactive Technologies Lab</a>, ETH Zürich</h2>
+            <img src="/assets/img/ETH_logo.png" alt="Company Logo">
+            <h2 class="company-name"> Research Assistant at <a href="https://krauthammerlab.ch/" target="_blank">KrauthammerLab</a>, University of Zürich</h2>
         </div>
-        <p>July 2023 - Present</p>
-        <p> I am working on Long-Term Action Anticipation (LTA) task utilizing vision-language and large language models, under the supervision of <a href="https://xiwang1212.github.io/homepage/" target="_blank">Dr. Xi Wang</a>  and <a href="https://xianyongqin.github.io/" target="_blank">Dr. Yongqin Xian</a>. We achieved the state-of-the-art performance on LTA Ego4D challenge. </p>
+        <p>June 2022 - March 2023</p>
+        <p> I improved the transformer-based models on radiolog report generation task from chest X-ray images. I work closely with <a href="https://krauthammerlab.ch/authors/farhadzad/" target="_blank">Dr. Farhad Nooralahzadeh</a> and <a href="https://krauthammerlab.ch/authors/michaelkrauthammer/" target="_blank">PI. Michael Krauthammer</a>. We also collaborated with radiologists at Kyoto University to understand radiology reports.
     </div>
 </body>
 </html>
