@@ -2,12 +2,10 @@
 layout: page
 permalink: /experiences/
 title: Experiences
-description: #Work experiences in reversed chronological order.
+description: Work experiences in reversed chronological order.
 nav: true
 nav_order: 7
 ---
-
-
 
 <html lang="en">
 <head>
@@ -24,52 +22,50 @@ nav_order: 7
             padding: 20px;
             border-radius: 5px;
             display: flex;
-            align-items: center;
+            flex-direction: column; /* Display items in a column */
+            align-items: center; /* Center items horizontally */
+            text-align: center; /* Center text horizontally */
         }
         .experiment img {
             max-width: 100px;
         }
-        .experiment-details {
-            margin-left: 20px;
+        .company-details {
             display: flex;
-            flex-direction: column;
-            font-size: 18px;
+            align-items: center; /* Center items horizontally */
         }
         .company-name {
-            font-family: "Times New Roman", Times, serif; /* Change font for company name */
-            font-size: 20px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 24px; /* Adjust font size as needed */
+            margin-left: 15px; /* Add some spacing between logo and name */
         }
         .period {
             font-family: "Verdana", Geneva, sans-serif; /* Change font for period */
             font-size: 18px;
+            margin-left: 15px; /* Add some spacing between logo and name */
         }
         .title {
             font-family: "Courier New", Courier, monospace; /* Change font for title */
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
+            margin-left: 15px; /* Add some spacing between logo and name */
         }
         .experiment h2 {
             margin-top: 0;
-            font-size: 24px;
         }
     </style>
 </head>
 <body>
-    <!-- Example Experiment Section -->
+    <h1>My Experiments</h1>
+
     <div class="experiment">
-        <a href="https://www.ethz.ch" target="_blank">
-              {% include figure.html
-              path="assets/img/ETH_logo.png"
-              alt=page.profile.image -%}
-        </a>
-        <div class="experiment-details">
-        	<p class="title">Experiment Title</p>
-            <h2 class="company-name">Company Name</h2>
+        <div class="company-details">
+            <img src="company_logo.png" alt="Company Logo">
+            <h2 class="company-name"><a href="https://www.example.com" target="_blank">Company Name</a></h2>
+            <p class="title">Experiment Title</p>
             <p class="period">January 2023 - March 2023</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et justo in lorem cursus bibendum.</p>
         </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et justo in lorem cursus bibendum.</p>
     </div>
-    <!-- Add more experiment sections as needed -->
 
 
 </body>
