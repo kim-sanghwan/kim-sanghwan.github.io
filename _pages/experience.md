@@ -48,16 +48,12 @@ nav_order: 7
     <!-- Example Experiment Section -->
     <div class="experiment">
         <div class="company-details">
-            <img src="company_logo.png" alt="Company Logo">
-            <h2 class="company-name"><a href="https://www.example.com" target="_blank">Company Name</a></h2>
+            <img src="https://github.com/kim-sanghwan/kim-sanghwan.github.io/tree/master/assets/img/ETH_logo.png" alt="Company Logo">
+            <h2 class="company-name"> Research Assistant at <a href="https://www.example.com" target="_blank">Company Name</a>, ETH Zurich</h2>
         </div>
-        <p><strong>Title:</strong> Experiment Title</p>
         <p><strong>Period:</strong> January 2023 - March 2023</p>
         <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et justo in lorem cursus bibendum.</p>
     </div>
-
-    <!-- Add more experiment sections as needed -->
-
 </body>
 </html>
 
