@@ -11,6 +11,7 @@ nav_order: 7
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experiment Page</title>
     <style>
         /* Add your CSS styles here */
         body {
@@ -22,51 +23,40 @@ nav_order: 7
             padding: 20px;
             border-radius: 5px;
             display: flex;
-            flex-direction: column; /* Display items in a column */
-            align-items: center; /* Center items horizontally */
-            text-align: center; /* Center text horizontally */
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the left */
         }
         .experiment img {
             max-width: 100px;
         }
         .company-details {
             display: flex;
-            align-items: center; /* Center items horizontally */
+            align-items: center;
         }
         .company-name {
             font-family: "Times New Roman", Times, serif;
-            font-size: 24px; /* Adjust font size as needed */
-            margin-left: 15px; /* Add some spacing between logo and name */
-        }
-        .period {
-            font-family: "Verdana", Geneva, sans-serif; /* Change font for period */
-            font-size: 18px;
-            margin-left: 15px; /* Add some spacing between logo and name */
-        }
-        .title {
-            font-family: "Courier New", Courier, monospace; /* Change font for title */
             font-size: 20px;
-            font-weight: bold;
-            margin-left: 15px; /* Add some spacing between logo and name */
+            margin-left: 10px;
         }
         .experiment h2 {
             margin-top: 0;
+            font-size: 24px;
         }
     </style>
 </head>
 <body>
-    <h1>My Experiments</h1>
-
+    <!-- Example Experiment Section -->
     <div class="experiment">
         <div class="company-details">
             <img src="company_logo.png" alt="Company Logo">
             <h2 class="company-name"><a href="https://www.example.com" target="_blank">Company Name</a></h2>
-            <p class="title">Experiment Title</p>
-            <p class="period">January 2023 - March 2023</p>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et justo in lorem cursus bibendum.</p>
+        <p><strong>Title:</strong> Experiment Title</p>
+        <p><strong>Period:</strong> January 2023 - March 2023</p>
+        <p><strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et justo in lorem cursus bibendum.</p>
     </div>
 
+    <!-- Add more experiment sections as needed -->
 
 </body>
 </html>
