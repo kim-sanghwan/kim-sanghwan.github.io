@@ -1,6 +1,20 @@
 ---
 ---
 
+@article{kim2023LALM,
+  arxiv={2311.17944},
+  abstract={Understanding human activity is a crucial yet intricate task in egocentric vision, a field that focuses on capturing visual perspectives from the camera wearer's viewpoint. While traditional methods heavily rely on representation learning trained on extensive video data, there exists a significant limitation: obtaining effective video representations proves challenging due to the inherent complexity and variability in human activities.Furthermore, exclusive dependence on video-based learning may constrain a model's capability to generalize across long-tail classes and out-of-distribution scenarios.
+  In this study, we introduce a novel approach for long-term action anticipation using language models (LALM), adept at addressing the complex challenges of long-term activity understanding without the need for extensive training. Our method incorporates an action recognition model to track previous action sequences and a vision-language model to articulate relevant environmental details. By leveraging the context provided by these past events, we devise a prompting strategy for action anticipation using large language models (LLMs). Moreover, we implement Maximal Marginal Relevance for example selection to facilitate in-context learning of the LLMs. Our experimental results demonstrate that LALM surpasses the state-of-the-art methods in the task of long-term action anticipation on the Ego4D benchmark. We further validate LALM on two additional benchmarks, affirming its capacity for generalization across intricate activities with different sets of taxonomies. These are achieved without specific fine-tuning.},
+  bibtex_show={true},
+  title={LALM: Long-Term Action Anticipation with Language Models},
+  author={Kim, Sanghwan and Huang, Daoji and Xian, Yongqin and Hilliges, Otmar and Van Gool, Luc and Wang, Xi},
+  journal={https://arxiv.org/abs/2311.17944},
+  year={2023},
+  selected={true},
+  preview={kim2023LALM.png}
+}
+
+
 @article{kim2023distilling,
   arxiv={2309.16421},
   abstract={Distillation techniques have substantially improved the sampling speed of diffusion models, allowing of the generation within only one step or a few steps. However, these distillation methods require extensive training for each dataset, sampler, and network, which limits their practical applicability. To address this limitation, we propose a straightforward distillation approach, Distilled-ODE solvers (D-ODE solvers), that optimizes the ODE solver rather than training the denoising network. D-ODE solvers are formulated by simply applying a single parameter adjustment to existing ODE solvers. Subsequently, D-ODE solvers with smaller steps are optimized by ODE solvers with larger steps through distillation over a batch of samples. Our comprehensive experiments indicate that D-ODE solvers outperform existing ODE solvers, including DDIM, PNDM, DPM-Solver, DEIS, and EDM, especially when generating samples with fewer steps. Our method incur negligible computational overhead compared to previous distillation techniques, enabling simple and rapid integration with previous samplers. Qualitative analysis further shows that D-ODE solvers enhance image quality while preserving the sampling trajectory of ODE solvers.},
