@@ -23,5 +23,5 @@ I am an [ELLIS](https://ellis.eu/) PhD Student co-advised by [Zeynep Akata](http
 
 My research focuses on machine perception, particularly at the intersection of computer vision and natural language processing. Currently, I am working on vision-language pre-training and video question answering.
 
-I'm always open to collaborations or project supervisions! Feel free to reach out! :).
+I'm always open to collaborations or project supervisions! Feel free to reach out :).
 
