@@ -3,7 +3,7 @@ layout: page
 permalink: /experiences/
 title: Experiences
 description: Work experiences in reversed chronological order.
-nav: true
+nav: false
 nav_order: 7 
 ---
 <html lang="en">
