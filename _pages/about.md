@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am an [ELLIS] (https://ellis.eu/) PhD Student co-advised by [Zeynep Akata] (https://www.eml-munich.de/people/zeynep-akata) (TUM & Helmholtz Munich) and Yongqin Xian (https://xianyongqin.github.io/) (Google Zurich). I hold a Master's degree in Data Science from [ETH Zurich] (https://ethz.ch/en) and a Bachelor's degree in Electrical Engineering from [KAIST](https://www.kaist.ac.kr/en/).
+I am an [ELLIS](https://ellis.eu/) PhD Student co-advised by [Zeynep Akata](https://www.eml-munich.de/people/zeynep-akata) (TUM & Helmholtz Munich) and [Yongqin Xian](https://xianyongqin.github.io/) (Google Zurich). I hold a Master's degree in Data Science from [ETH Zurich](https://ethz.ch/en) and a Bachelor's degree in Electrical Engineering from [KAIST](https://www.kaist.ac.kr/en/).
 
 My research focuses on machine perception, particularly at the intersection of computer vision and natural language processing. Currently, I am working on vision-language pre-training and video question answering.
 
