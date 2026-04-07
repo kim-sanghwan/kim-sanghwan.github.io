@@ -1,6 +1,54 @@
 ---
 ---
 
+@article{choi2026sink,
+  arxiv={2604.03316},
+  abstract={Attention sinks are defined as tokens that attract disproportionate attention. While these have been studied in single modality transformers, their cross-modal impact in Large Vision-Language Models (LVLM) remains largely unexplored: are they redundant artifacts or essential global priors? This paper first categorizes visual sinks into two distinct categories: ViT-emerged sinks (V-sinks), which propagate from the vision encoder, and LLM-emerged sinks (L-sinks), which arise within deep LLM layers. Based on the new definition, our analysis reveals a fundamental performance trade-off: while sinks effectively encode global scene-level priors, their dominance can suppress the fine-grained visual evidence required for local perception. Furthermore, we identify specific functional layers where modulating these sinks most significantly impacts downstream performance. To leverage these insights, we propose Layer-wise Sink Gating (LSG), a lightweight, plug-and-play module that dynamically scales the attention contributions of V-sink and the rest visual tokens. LSG is trained via standard next-token prediction, requiring no task-specific supervision while keeping the LVLM backbone frozen. In most layers, LSG yields improvements on representative multimodal benchmarks, effectively balancing global reasoning and precise local evidence.},
+  bibtex_show={true},
+  title={When Sinks Help or Hurt: Unified Framework for Attention Sink in Large Vision-Language Models},
+  author={Choi, Jiho and Kim, Jaemin and Kim, Sanghwan and Hong, Seunghoon and Park, Jin-Hwi},
+  journal={Under Review},
+  year={2026},
+  preview={choi2026sink.png}
+}
+
+@article{wu2026drop,
+  arxiv={2603.17228},
+  abstract={Multimodal Large Language Models (MLLMs) are increasingly applied to pixel-level vision tasks, yet their intrinsic capacity for spatial understanding remains poorly understood. We investigate segmentation capacity through a layerwise linear probing evaluation across the entire MLLM pipeline: vision encoder, adapter, and LLM. We further conduct an intervention based attention knockout analysis to test whether cross-token attention progressively refines visual representations, and an evaluation of bidirectional attention among image tokens on spatial consistency. Our analysis reveals that the adapter introduces a segmentation representation drop-off, but LLM layers progressively recover through attention-mediated refinement, where correctly classified tokens steer misclassified neighbors toward the correct label. At early image token positions, this recovery is bounded by causal attention, which bidirectional attention among image tokens alleviates. These findings provide a mechanistic account of how MLLMs process visual information for segmentation, informing the design of future segmentation-capable models.},
+  bibtex_show={true},
+  title={From Drop-off to Recovery: A Mechanistic Analysis of Segmentation in MLLMs},
+  author={Wu, Boyong and Kim, Sanghwan and Akata, Zeynep},
+  journal={Under Review},
+  year={2026},
+  preview={wu2026drop.png}
+}
+
+@article{xiao2026finer,
+  arxiv={2603.17662},
+  code={https://github.com/ExplainableML/finer},
+  abstract={Multimodal large language models (MLLMs) struggle with hallucinations, particularly with fine-grained queries, a challenge underrepresented by existing benchmarks that focus on coarse image-related questions. We introduce FIne-grained NEgative queRies (FINER), alongside two benchmarks: FINER-CompreCap and FINER-DOCCI. Using FINER, we analyze hallucinations across four settings: multi-object, multi-attribute, multi-relation, and ``what'' questions. Our benchmarks reveal that MLLMs hallucinate when fine-grained mismatches co-occur with genuinely present elements in the image. To address this, we propose FINER-Tuning, leveraging Direct Preference Optimization (DPO) on FINER-inspired data. Finetuning four frontier MLLMs with FINER-Tuning yields up to 24.2\% gains (InternVL3.5-14B) on hallucinations from our benchmarks, while simultaneously improving performance on eight existing hallucination suites, and enhancing general multimodal capabilities across six benchmarks.},
+  bibtex_show={true},
+  title={FINER: MLLMs Hallucinate under Fine-grained Negative Queries},
+  author={Xiao, Rui and Kim, Sanghwan and Xian, Yongqin and Akata, Zeynep and Alaniz, Stephan},
+  journal={CVPR},
+  year={2026},
+  selected={true},
+  preview={xiao2026finer.png}
+}
+
+@article{kim2025training,
+  arxiv={2510.00705},
+  code={https://github.com/ExplainableML/ug-framework},
+  abstract={Multimodal Large Language Models (MLLMs) often struggle with fine-grained perception, such as identifying small objects in high-resolution images or detecting key moments in long videos. Existing methods typically rely on complex, task-specific fine-tuning, which reduces generalizability and increases system complexity. In this work, we propose an effective, training-free framework that uses an MLLM's intrinsic uncertainty as proactive guidance. Our core insight is that a model's uncertainty decreases when provided with relevant visual information. We introduce a unified mechanism that scores candidate visual inputs by response uncertainty, enabling the model to autonomously focus on the most informative data. We apply this simple principle to three challenging visual tasks: Visual Search, Long Video Understanding, and Temporal Grounding, allowing off-the-shelf MLLMs to achieve performance competitive with specialized, fine-tuned systems. Our results demonstrate that leveraging intrinsic uncertainty is a powerful strategy for improving fine-grained multimodal performance.},
+  bibtex_show={true},
+  title={Training-free Uncertainty Guidance for Complex Visual Tasks with MLLMs},
+  author={Kim, Sanghwan and Xiao, Rui and Alaniz, Stephan and Xian, Yongqin and Akata, Zeynep},
+  journal={Under Review},
+  year={2026},
+  selected={true},
+  preview={kim2025training.png}
+}
+
 @article{kim2024cosmos,
   arxiv={2412.01814},
   code={https://github.com/ExplainableML/cosmos},
