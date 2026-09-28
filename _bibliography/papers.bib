@@ -9,6 +9,7 @@
   title={Training-free Uncertainty Guidance for Complex Visual Tasks with MLLMs},
   author={Kim, Sanghwan and Xiao, Rui and Alaniz, Stephan and Xian, Yongqin and Akata, Zeynep},
   journal={ECCV},
+  note={ECCV Workshop on Multimodal Large Language Models for Unified Comprehension and Generation (MUCG), Oral},
   year={2026},
   selected={true},
   preview={kim2025training.png}
@@ -20,7 +21,7 @@
   bibtex_show={true},
   title={When Sinks Help or Hurt: Unified Framework for Attention Sink in Large Vision-Language Models},
   author={Choi, Jiho and Kim, Jaemin and Kim, Sanghwan and Hong, Seunghoon and Park, Jin-Hwi},
-  journal={ECCV},
+  journal={ECCV Spotlight},
   year={2026},
   preview={choi2026sink.png}
 }
@@ -47,6 +48,50 @@
   year={2026},
   selected={true},
   preview={xiao2026finer.png}
+}
+
+@article{grob2026bigger,
+  html={https://openreview.net/forum?id=b7PdSEO2Pm},
+  abstract={Images that violate everyday semantic expectations, such as a dog with five legs, expose a fundamental limitation of multimodal large language models (MLLMs): they may rely more on learned priors than on the visual evidence itself. Although prior work has observed such failures, we still lack a unified account of when they become more severe, why they arise, and how they can be mitigated. This work addresses all three questions. Across six MLLM families and three counterfactual visual grounding benchmarks, we find an inverse scaling trend: as models grow larger, they increasingly rely on language priors over visual evidence (when). Linear probing reveals that visual information is faithfully encoded throughout the LLM backbone, yet the model fails to act on it, reflecting an arbitration failure rather than a perceptual one. Further analysis shows that language priors are already committed in the early layers before visual signals begin to integrate in the middle of the network, suggesting that the arbitration imbalance must be corrected at the very first layers the LLM processes (why). We propose Visual Arbitration for MLLMs (VisArb), where a sparse autoencoder (SAE) is inserted between the vision backbone and the MLP connector, replacing dense feature maps with sparse, concept-aligned representations that are immediately legible to the arbitration mechanism from the first LLM layer onward (how). Our VisArb substantially improves counterfactual conflict recognition and reduces language-prior dominance while preserving performance on standard VQA benchmarks.},
+  bibtex_show={true},
+  title={Bigger Is Not Better: Inverse Scaling and Arbitration Failure in Counterfactual Visual Grounding},
+  author={Grob*, Fabian and Kim*, Sanghwan and Schmid, Cordelia and Akata, Zeynep},
+  journal={ICML Workshop on Mechanistic Interpretability},
+  year={2026},
+  preview={grob2026bigger.png}
+}
+
+@article{sakalyan2026block,
+  html={https://openreview.net/forum?id=hLFRcxXKxY},
+  abstract={Test-time routing improves frozen large language models (LLMs) by taking non-linear paths through their layers, without modifying weights or generating extra tokens. Existing approaches define route spaces that grow exponentially with depth, making them costly to search and hard to learn from. We therefore introduce Block-Level Recursion (BLR), a restricted route family that repeats a single contiguous block of transformer layers once. This reduces the number of routes from exponential to quadratic in the number of layers, making exhaustive per-instance evaluation tractable and the oracle upper bound directly measurable. Despite this restriction, BLR retains most of the routing potential. Across six model families and ten reasoning benchmarks, the optimal block varies across models, tasks, and individual inputs, with per-instance oracle gains of +59.1\% on average and up to +75.8\% on individual tasks. BLR also supports two practical policies: a single train-selected block (sBLR) that requires no router or per-input overhead, and a learned global router (aBLR) trained from dense per-instance rewards over all routes. sBLR already recovers a substantial fraction of the available gains, while aBLR improves further by selecting routes per input. With a frozen Qwen2.5-0.5B backbone, aBLR achieves higher accuracy than the unrouted Qwen2.5-7B model at lower FLOPs.},
+  bibtex_show={true},
+  title={Block-Level Recursion: Adaptive Test-Time Routing in Large Language Models},
+  author={Sakalyan*, Kristiyan and Kim*, Sanghwan and Schwinn, Leo and Bouniot, Quentin and Akata, Zeynep},
+  journal={ICML Workshop on Resource-Adaptive Foundation Model Inference (AdaptFM), Oral},
+  year={2026},
+  preview={sakalyan2026block.png}
+}
+
+@article{he2026vislens,
+  arxiv={2608.30705},
+  abstract={Multimodal large language models (MLLMs) struggle with fine-grained Visual Search, the task of locating small or rare objects in high-resolution images. Existing remedies fall into two families: (1) Training-free methods based on attention or confidence scores are accurate but slow, since they require multiple MLLM queries per example. (2) Reinforcement Learning (RL) trained tool-use models are faster at inference but opaque, since their tool calls remain uncontrollable and hard to interpret. To overcome this, we propose VisLens (Visual Focus via Logit Lens), a Visual Search method built on the logit lens, which decodes the semantics held in a hidden state by projecting it through the LLM head. VisLens further uses a lightweight tuned-lens that maps early hidden states into the final hidden state space, so visual tokens can be read out from early layers. These tokens are matched to target words in the query to generate a crop of the relevant region, which is fed back in alongside the original image to produce the final answer. The whole process, from decoding to the final answer, completes in a single forward pass without repeated queries. VisLens matches or exceeds prior baselines while delivering a substantial latency advantage, running 8.5--9.9x faster than Thyme and up to 22.2x faster than training-free multi-pass search methods.},
+  bibtex_show={true},
+  title={VisLens: Single-Pass Interpretable Visual Search for Multimodal LLMs},
+  author={He, Jingyi and Kim, Sanghwan and Akata, Zeynep},
+  journal={ECCV Workshop on Explainable Computer Vision (eXCV)},
+  year={2026},
+  preview={he2026vislens.png}
+}
+
+@article{korkut2026accuracy,
+  arxiv={2606.30220},
+  abstract={High benchmark accuracy does not guarantee genuine use of visual evidence. We study this problem in traffic accident Video Question Answering (VideoQA), where correct answers should depend on scene-specific visual evidence but may instead be inferred from textual shortcuts. Through an audit of four public benchmarks, we find that several recent open-weight Vision-Language Models (VLMs) perform competitively, and sometimes better, without video input. On the MM-AU benchmark, removing video consistently improves accuracy, and adding more frames further degrades performance. To quantify visual dependence, we introduce two dataset-level diagnostics: Blind Gap, measuring above-chance text-only performance, and Visual Gain, measuring the marginal benefit of adding video. We further propose an instance-level Shortcut Score that combines text-only confidence with visual necessity signals, enabling continuous, training-free filtering of shortcut-prone questions. The resulting subsets reduce shortcut bias and improve visual grounding. Our findings reveal large differences in grounding quality across benchmarks and show that visually grounded evaluation, not just high accuracy, is essential in safety-critical VideoQA.},
+  bibtex_show={true},
+  title={From Accuracy to Visual Dependence: Auditing and Filtering Modality Collapse in Traffic VideoQA},
+  author={Korkut, Sena and Bravo Sarmiento, Mar{\'\i}a Alejandra and Kim, Sanghwan and Akata, Zeynep},
+  journal={ICML Workshop on Combining Theory and Benchmarks (CTB)},
+  year={2026},
+  preview={korkut2026accuracy.png}
 }
 
 @article{kim2024cosmos,
@@ -111,7 +156,7 @@
   bibtex_show={true},
   title={Boosting Radiology Report Generation by Infusing Comparison Prior},
   author={Kim, Sanghwan and Nooralahzadeh, Farhad and Rohanian, Morteza and Fujimoto, Koji and Nishio, Mizuho and Sakamoto, Ryo and Rinaldi, Fabio and Krauthammer, Michael},
-  journal={ACL Workshop},
+  journal={ACL Workshop on Biomedical Natural Language Processing (BioNLP)},
   year={2023},
   selected={true},
   preview={kim2023boosting.jpg}

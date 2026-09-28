@@ -19,9 +19,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am an [ELLIS](https://ellis.eu/) PhD Student co-advised by [Zeynep Akata](https://www.eml-munich.de/people/zeynep-akata) (TUM & Helmholtz Munich) and [Yongqin Xian](https://xianyongqin.github.io/) (Google Zurich). I hold a Master's degree in Data Science from [ETH Zurich](https://ethz.ch/en) and a Bachelor's degree in Electrical Engineering from [KAIST](https://www.kaist.ac.kr/en/).
+I am an [ELLIS](https://ellis.eu/) PhD Student co-advised by [Zeynep Akata](https://www.eml-munich.de/people/zeynep-akata) (TUM & Helmholtz Munich) and [Cordelia Schmid](https://cordeliaschmid.github.io/) (Inria & Google). I hold a Master's degree in Data Science from [ETH Zurich](https://ethz.ch/en) and a Bachelor's degree in Electrical Engineering from [KAIST](https://www.kaist.ac.kr/en/).
 
-My research focuses on multimodal learning and vision-language alignment. Currently, I am working on improving MLLM reasoning and long video question answering.
+My research focuses on multimodal large language models (MLLMs), spanning vision-language pre-training, hallucination, and mechanistic interpretability. Currently, I am working on improving spatial understanding in MLLMs.
 
 I'm always open to collaborations or project supervisions! Feel free to reach out :).
 
